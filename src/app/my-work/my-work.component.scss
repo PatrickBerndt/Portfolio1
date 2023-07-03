@@ -1,0 +1,58 @@
+.myWork{
+    width: 80%;
+    margin: 0 10%;
+    h2{
+        font-size: 80px;
+        font-weight: 700;
+    }
+    span{
+        font-size: 20px;
+    }
+}
+.project{
+    display: flex;
+    align-items: flex-end;
+    gap: 50px;
+
+    .textBlock{
+        display: flex;
+        flex-direction: column;
+        .text{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin-bottom: 30px;
+            #name{
+                font-size: 50px;
+                font-weight: 800;
+            }
+            #tec{
+                font-size: 30px;
+                color:rgb(97, 132, 247) ;
+            }
+            #description{
+                font-size: 20px;
+                
+            }
+                
+        }
+        .btn{
+           display: flex;
+           gap: 20px;
+            button{ 
+                height: 60px;
+                width: 120px;
+                border: 2px solid black;
+                border-radius: 10px;
+                background-color: transparent;
+                font-size: 20px;
+                font-weight: 700;
+                &:hover{
+                    background-color: rgb(97, 132, 247);
+                    color: white;
+                }
+            }
+        }
+    }
+    
+}

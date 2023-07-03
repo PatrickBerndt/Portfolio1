@@ -52,3 +52,20 @@
     background: linear-gradient(-50deg, #184aff 0%, rgba(66, 139, 255, 0.84) 100%);
 
 }
+.scroll{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 0;
+    right: 20%;
+    .bar{
+        background-color: black;
+        height: 20vh;
+        width: 2px;
+    }
+    span{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+}
