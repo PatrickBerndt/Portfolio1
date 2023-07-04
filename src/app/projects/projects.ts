@@ -16,7 +16,6 @@ export class Projects{
             gitLink: 'https://github.com/PatrickBerndt/El-Gato',
             liveLink: 'https://patrick-berndt.developerakademie.net/ElGato/'
         },
-        
       ];
 }
    

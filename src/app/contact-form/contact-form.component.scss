@@ -1,0 +1,51 @@
+.contactForm{
+    width: 80vw;
+    margin: 5vh 10vw ;
+    .formBlock{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+        .text{
+            
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .formArea{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            input{
+                width: 40vw;
+                height: 30px;
+                border: 1px solid black;
+                border-radius: 10px;
+            }
+            textarea{
+                border: 1px solid black;
+                border-radius: 10px;
+                width: 40vw;
+                height: 150px;
+            }
+            #btn{
+                height: 60px;
+                width: 200px;
+                border: 1px solid black;
+                border-radius: 10px;
+                background-color: transparent;
+                font-size: 20px;
+                font-weight: 700;
+                cursor: pointer;
+                &:hover{
+                    background-color: rgb(97, 132, 247);
+                    color: white;
+                }
+            }
+            
+        }
+    }
+}
+.center{
+    align-items: center;
+}
