@@ -13,7 +13,7 @@
     display: flex;
     align-items: flex-end;
     gap: 50px;
-
+    margin: 100px 0;
     .textBlock{
         display: flex;
         flex-direction: column;
@@ -32,9 +32,7 @@
             }
             #description{
                 font-size: 20px;
-                
             }
-                
         }
         .btn{
            display: flex;
@@ -55,4 +53,11 @@
         }
     }
     
+}
+.flip{
+    flex-direction: row-reverse;
+}
+.flipSide{
+   align-items: flex-end;
+    text-align: end;
 }

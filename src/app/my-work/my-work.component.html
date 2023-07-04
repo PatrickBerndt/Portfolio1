@@ -2,11 +2,11 @@
     <h2>My work</h2>
     <span>This page is a sample of my work - please feel free to try them out.</span>
 
-    <div *ngFor="let project of projectList" class="project">
+    <div *ngFor="let project of projectList; let i = index" [class.flip]="i % 2" class="project">
         <img src="{{ project.image}}" >
-        <div class="textBlock">
-            <div class="text">
-                <span id="name">{{project.name}}</span>
+        <div [class.flipSide]="i % 2" class="textBlock">
+            <div [class.flipSide]="i % 2" class="text">
+                <span  id="name">{{project.name}}</span>
                 <span id="tec">{{ project.tec}}</span>
                 <span id="description">{{ project.description }}</span>
             </div>
@@ -16,6 +16,5 @@
             </div>
         </div>
     </div>
-   
     
 </div>
