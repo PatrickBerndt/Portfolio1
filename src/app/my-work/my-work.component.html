@@ -2,60 +2,20 @@
     <h2>My work</h2>
     <span>This page is a sample of my work - please feel free to try them out.</span>
 
-    <div class="project">
-        <img src="assets/Component 3.png" >
+    <div *ngFor="let project of projectList" class="project">
+        <img src="{{ project.image}}" >
         <div class="textBlock">
             <div class="text">
-                <span id="name">Join</span>
-                <span id="tec">Angular | TypeScript | HTML | CSS | Firebase</span>
-                <span id="description">Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. </span>
+                <span id="name">{{project.name}}</span>
+                <span id="tec">{{ project.tec}}</span>
+                <span id="description">{{ project.description }}</span>
             </div>
             <div class="btn">
-                <button>Github</button>
-                <button>Live test</button>
+                <button (click)="link(project.gitLink)" >Github</button>
+                <button (click)="link(project.liveLink)">Live test</button>
             </div>
         </div>
     </div>
-    <div class="project" style="flex-direction: row-reverse;">
-        <img src="assets/Component 3.png" >
-        <div class="textBlock" style="align-items: flex-end;">
-            <div class="text" style="align-items: flex-end;">
-                <span id="name">Join</span>
-                <span id="tec">Angular | TypeScript | HTML | CSS | Firebase</span>
-                <span id="description">Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. </span>
-            </div>
-            <div class="btn">
-                <button>Github</button>
-                <button>Live test</button>
-            </div>
-        </div>
-    </div>
-    <div class="project">
-        <img src="assets/Component 3.png" >
-        <div class="textBlock">
-            <div class="text">
-                <span id="name">Join</span>
-                <span id="tec">Angular | TypeScript | HTML | CSS | Firebase</span>
-                <span id="description">Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. </span>
-            </div>
-            <div class="btn">
-                <button>Github</button>
-                <button>Live test</button>
-            </div>
-        </div>
-    </div>
-    <div class="project" style="flex-direction: row-reverse;">
-        <img src="assets/Component 3.png" >
-        <div class="textBlock" style="align-items: flex-end;">
-            <div class="text" style="align-items: flex-end;">
-                <span id="name">Join</span>
-                <span id="tec">Angular | TypeScript | HTML | CSS | Firebase</span>
-                <span id="description">Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. </span>
-            </div>
-            <div class="btn">
-                <button>Github</button>
-                <button>Live test</button>
-            </div>
-        </div>
-    </div>
+   
+    
 </div>

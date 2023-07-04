@@ -8,13 +8,15 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { SkillsetComponent } from './skillset/skillset.component';
 import { MyWorkComponent } from './my-work/my-work.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     HeadSectionComponent,
     AboutMeComponent,
     SkillsetComponent,
-    MyWorkComponent
+    MyWorkComponent,
+    
   ],
   imports: [
     BrowserModule,
