@@ -1,13 +1,15 @@
+
 <div class="fullsite">
   <div class="herosection">
 
     
     <div class="headlineLinks">
-        <a href="#">About me</a>
-        <a href="#">Skill set</a>
-        <a href="#">My work</a>
+        <a (click)="scrollToTarget('about')">About me</a>
+        <a (click)="scrollToTarget('skill')">Skill set</a>
+        <a (click)="scrollToTarget('work')">My work</a>
     </div>
-    <img src="assets/Portfolio Bilder00533 Kopie.png">
+    <div class="imgBg"></div>
+    <img class="portrait" src="assets/Portfolio Bilder00533 Kopie.png">
     <div>
         <div class="tagline" style="justify-content: flex-end;">
           <span style="font-weight: 100; font-size: 6.5vh;">Hello! I am Patrick</span>
@@ -19,7 +21,11 @@
           <div class="bar"></div>
         </div>
     </div>
+    <div class="linkIcons">
+      <img class="icons" (click)="link('https://www.github.com/PatrickBerndt/')" src="assets/Github button s2.png">
+      <img class="icons" (click)="scrollToTarget('contact')" src="assets/Email button s2.png">
+      <img class="icons" (click)="link('https://www.linkedin.com/in/patrick-berndt-924975281/')" src="assets/Linkedin button s2.png">
+    </div>
     
-    <div class="imgBg"></div>
   </div>
 </div>
