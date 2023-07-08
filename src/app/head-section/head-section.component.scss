@@ -90,5 +90,8 @@
         cursor: pointer;
         height:6vh ;
         width: 6vh;
+        &:hover{
+           transform: translateX(-0.7vw);
+        }
     }
 }
