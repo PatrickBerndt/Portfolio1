@@ -4,6 +4,7 @@
     h2{
         font-size: 80px;
         font-weight: 600;
+        color: rgb(105, 105, 105);
     }
     span{
         font-size: 20px;
@@ -24,7 +25,8 @@
             margin-bottom: 30px;
             #name{
                 font-size: 50px;
-                font-weight: 800;
+                font-weight: 600;
+                color: rgb(105, 105, 105);
             }
             #tec{
                 font-size: 30px;
@@ -44,7 +46,7 @@
                 border-radius: 10px;
                 background-color: transparent;
                 font-size: 20px;
-                font-weight: 700;
+                font-weight: 500;
                 cursor: pointer;
                 &:hover{
                     background-color: rgb(97, 132, 247);
@@ -52,6 +54,9 @@
                 }
             }
         }
+    }
+    img{
+        width: 40vw;
     }
     
 }

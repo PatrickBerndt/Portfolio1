@@ -10,21 +10,29 @@
     margin: 0 10%;
     display: flex;
     position: relative;
+    img{
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        left: 0;
+        height: 90vh;
+    }
 }
     
 .tagline{
     position: absolute;
     top: 30vh;
     right: 5%;
-    font-size: 80px;
+    font-size: 9vh;
     display: flex;
     flex-direction: column;
-    font-weight: 900;
+    font-weight: 600;
     z-index: 1;
+    color: rgb(105, 105, 105);
 }
 .headlineLinks{
     width: 100%;
-    height: 80px;
+    height: 5vh;
     display: flex;
     justify-content: flex-end;
     padding-top: 20px;
@@ -41,8 +49,8 @@
 }
 .imgBg{
     position: absolute;
-    height: 1000px;
-    width: 1000px;
+    height: 110vh;
+    width: 110vh;
     border-radius: 50%;
     top: -190px;
     left: -300px;
@@ -65,7 +73,7 @@
         width: 2px;
     }
     span{
-        font-size: 20px;
-        margin-bottom: 20px;
+        font-size: 3vh;
+        margin-bottom: 2vh;
     }
 }
