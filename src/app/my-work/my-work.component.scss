@@ -67,3 +67,41 @@
    align-items: flex-end;
     text-align: end;
 }
+@media ( max-width: 900px){
+    .project{
+        
+        flex-direction: column;
+        align-items: center;
+       
+        margin: 5% 0;
+        .textBlock{
+            align-items: center;
+            .text{
+               align-items: center;
+                #name{
+                    font-size:40px;
+                  
+                }
+                #tec{
+                    font-size: 20px;
+                  
+                }
+                #description{
+                    font-size: 15px;
+                }
+            }
+           
+        }
+        img{
+            width: 80vw;
+        }
+        
+    }
+    .flip{
+        flex-direction: column;
+    }
+    .flipSide{
+       align-items: center;
+        text-align: unset;
+    }
+}

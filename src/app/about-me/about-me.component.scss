@@ -35,3 +35,16 @@
         color: white;
     }
 }
+@media ( max-width: 900px){
+    .aboutMeSection{
+        flex-direction: column;
+        padding: 50px 4%;
+    }
+    .btnTextWrap{
+        width: 90%;
+    }
+    .letsWork{
+        font-size: 60px;
+        width: 90%;
+    }
+}
