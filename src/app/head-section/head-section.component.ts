@@ -14,6 +14,5 @@ export class HeadSectionComponent {
 
   scrollToTarget(target: string) {
     this.scroller.scrollToAnchor(target);
-   
   }
 }

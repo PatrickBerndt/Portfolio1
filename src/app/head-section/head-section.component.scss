@@ -104,8 +104,16 @@
         width: 90%;
         margin: 0 5%;
     }
+    .tagline{
+       
+       
+        font-size: 6vw;
+        .hello{
+            font-weight: 100; font-size: 3.5vw;
+        }
+    }
 }
-@media (max-width: 1150px){
+@media (max-width: 1000px){
     .hideMobile{
         display: none !important;
     }
@@ -118,11 +126,29 @@
     }
     .tagline{
         top: 5%;
-        left: 40%;
+        left: 50%;
+        right: unset;
         transform: translateX(-50%);
         font-size: 7vh;
         .hello{
             font-weight: 100; font-size: 4.5vh;
+        }
+    }
+    
+}
+@media (max-width: 550px){
+    .herosection{
+        .portrait{
+        height: 120vw;
+       
+        }
+    }
+    .tagline{
+       top: calc(1.5 * 5%);
+        font-size: 11vw;
+        .hello{
+            
+            font-size: 7.5vw;
         }
     }
     

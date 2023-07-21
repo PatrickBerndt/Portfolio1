@@ -1,17 +1,18 @@
 <div class="contactForm">
     <h2>Contact</h2>
     <div class="formBlock">
-        <div class="text" style="width: 50%;">
+        <div class="text" >
             <span id="topLine">Got a problem to solve?</span>
             <span  id="description">Contact me through this form, I am interested in hearing you, knowing your ideas and contributing to your projects with my work.</span>
             <span id="bottomLine">Need a Frontend developer? <b>Contact me!</b></span>
         </div>
         <div class="formArea">
-            <form class="text center"  (submit)="sendMail()" id="contactForm" >
-                <input type="text" required placeholder="Your name" name="name" [(ngModel)]="name" id="name" >
+            <form ngNativeValidate class="text center" (submit)="sendMail()" id="contactForm" >
+                <input type="text" required  placeholder="Your name" name="name" [(ngModel)]="name" id="name" >
                 <input type="text" required placeholder="Your email" name="email" [(ngModel)]="email" id="email">
                 <textarea placeholder="Your message" required name="message" id="message" cols="30" rows="10" [(ngModel)]="message"></textarea>
-                <button type="submit" [disabled]="isSending" id="btn">Say hello ;)</button>
+                <button type="submit" *ngIf="!isSending" id="btn">Say hello ;)</button>
+                <button [disabled]="isSending" class="dots-bounce" style="background-color: rgb(97, 132, 247)" *ngIf="isSending" id="btn"></button>
             </form>
             
         </div>

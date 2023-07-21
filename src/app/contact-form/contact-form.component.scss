@@ -55,3 +55,48 @@
 .center{
     align-items: center;
 }
+.dots-bounce {
+    --un-icon: url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 24 24' width='1.2em' height='1.2em' xmlns='http://www.w3.org/2000/svg' %3E%3Ccircle cx='4' cy='12' r='3' fill='currentColor'%3E%3Canimate id='svgSpinners3DotsBounce0' attributeName='cy' begin='0;svgSpinners3DotsBounce1.end+0.25s' calcMode='spline' dur='0.6s' keySplines='.33,.66,.66,1;.33,0,.66,.33' values='12;6;12'/%3E%3C/circle%3E%3Ccircle cx='12' cy='12' r='3' fill='currentColor'%3E%3Canimate attributeName='cy' begin='svgSpinners3DotsBounce0.begin+0.1s' calcMode='spline' dur='0.6s' keySplines='.33,.66,.66,1;.33,0,.66,.33' values='12;6;12'/%3E%3C/circle%3E%3Ccircle cx='20' cy='12' r='3' fill='currentColor'%3E%3Canimate id='svgSpinners3DotsBounce1' attributeName='cy' begin='svgSpinners3DotsBounce0.begin+0.2s' calcMode='spline' dur='0.6s' keySplines='.33,.66,.66,1;.33,0,.66,.33' values='12;6;12'/%3E%3C/circle%3E%3C/svg%3E");
+    -webkit-mask: var(--un-icon) no-repeat;
+    mask: var(--un-icon) no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    background-color:  rgb(97, 132, 247);
+    color:  rgb(97, 132, 247);
+    width: 1.2em;
+    height: 1.2em;
+  }
+
+@media (max-width: 700px){
+    .contactForm{
+       
+        h2{
+            font-size: 40px;
+           
+        }
+        .formBlock{
+           
+            flex-direction: column;
+            gap: 50px;
+            .text{
+              
+            }
+            .formArea{
+                width: 80%;
+                
+                input{
+                    width: 80vw;
+                    
+                }
+                textarea{
+                   
+                    width: 80vw;
+                    
+                }
+               
+                
+            }
+        }
+    }
+
+}

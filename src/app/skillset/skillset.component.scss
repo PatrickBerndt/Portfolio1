@@ -27,4 +27,24 @@
         }
     }
 }
-    
+@media(max-width: 900px){
+    .background{ 
+        .skillIcons{
+        
+            width: 90vw;
+            img{
+                
+                padding: 10px;
+            }
+        }
+    }
+}
+@media(max-width: 700px){
+    .background{ 
+        span{
+            padding-top: 50px;
+            font-size: 40px;
+            font-weight: 700;
+        }
+    }
+}
