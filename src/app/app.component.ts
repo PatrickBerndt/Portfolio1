@@ -1,5 +1,5 @@
-import { ViewportScroller } from '@angular/common';
 import { Component } from '@angular/core';
+import { PopupMenuComponent } from './popup-menu/popup-menu.component';
 
 @Component({
   selector: 'app-root',
@@ -7,8 +7,9 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent {
   title = 'Portfolio';
-
+  isOpen: boolean | undefined = PopupMenuComponent.isOpen;
 
 }

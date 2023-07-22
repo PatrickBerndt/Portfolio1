@@ -1,0 +1,11 @@
+<img class="menuIcon" src="assets/SimpleLineIconsMenu.svg" (click)="toggleMenu()">
+<div class="popupMenu" *ngIf="isOpen">
+
+    <a (click)="scrollToTarget('about')">About me</a>
+    <a (click)="scrollToTarget('skill')">Skill set</a>
+    <a (click)="scrollToTarget('work')">My work</a>
+    <img class="icons" (click)="link('https://www.github.com/PatrickBerndt/')" src="assets/Github button s2.png">
+    <img class="icons" (click)="scrollToTarget('contact')" src="assets/Email button s2.png">
+    <img class="icons" (click)="link('https://www.linkedin.com/in/patrick-berndt-924975281/')" src="assets/Linkedin button s2.png">
+
+</div>

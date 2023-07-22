@@ -1,0 +1,28 @@
+.menuIcon{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 11;
+    cursor: pointer;
+}
+.popupMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.199);
+    backdrop-filter: blur(10px);
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    a{
+        cursor: pointer;
+    }
+    img{
+        cursor: pointer;
+    }
+}

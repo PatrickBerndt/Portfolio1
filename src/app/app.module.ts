@@ -10,7 +10,8 @@ import { MyWorkComponent } from './my-work/my-work.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule } from '@angular/forms';
-import { ReactiveFormsModule } from '@angular/forms'
+import { ReactiveFormsModule } from '@angular/forms';
+import { PopupMenuComponent } from './popup-menu/popup-menu.component'
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { ReactiveFormsModule } from '@angular/forms'
     MyWorkComponent,
     ContactFormComponent,
     FooterComponent,
+    PopupMenuComponent,
     
   ],
   imports: [
