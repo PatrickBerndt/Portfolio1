@@ -1,5 +1,6 @@
 import { ViewportScroller } from '@angular/common';
 import { Component } from '@angular/core';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-popup-menu',
@@ -7,8 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./popup-menu.component.scss']
 })
 export class PopupMenuComponent {
-  public isOpen: boolean | undefined;
+  public isOpen: boolean |undefined 
   static isOpen: boolean | undefined;
+  
 
   link(callLink: any){
     window.open(callLink);

@@ -11,5 +11,4 @@ import { PopupMenuComponent } from './popup-menu/popup-menu.component';
 export class AppComponent {
   title = 'Portfolio';
   isOpen: boolean | undefined = PopupMenuComponent.isOpen;
-
 }
