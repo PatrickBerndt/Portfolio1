@@ -1,6 +1,7 @@
-import { Component, OnDestroy } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { IsOpen } from './services/isOpen.service';
 import { Subscription } from 'rxjs';
+
 
 @Component({
   selector: 'app-root',
@@ -10,19 +11,19 @@ import { Subscription } from 'rxjs';
   providers: [IsOpen]
 })
 
-export class AppComponent implements OnDestroy  {
+export class AppComponent implements OnInit {
 
   title = 'Portfolio';
-  private isOpenSubscription: Subscription;
+  private isOpenSubscription: Subscription | undefined;
 
   constructor(public isOpenService: IsOpen) {
-    this.isOpenSubscription = this.isOpenService.isOpen$.subscribe((isOpen: boolean) => {
-      console.log('isOpen in AnotherComponent:', isOpen);
-    });
+    
   }
 
-  ngOnDestroy(): void {
-    this.isOpenSubscription.unsubscribe();
+  ngOnInit(){
+    this.isOpenSubscription = this.isOpenService.isOpen$.subscribe((isOpen: boolean) => {
+      console.log('isOpen:', isOpen);})
   }
+ 
 
 }

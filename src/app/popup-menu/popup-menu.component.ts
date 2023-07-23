@@ -24,10 +24,7 @@ export class PopupMenuComponent {
     window.open(callLink);
   }
 
-  ngOnDestroy(): void {
-    
-    this.isOpenSubscription.unsubscribe();
-  }
+  
 
   scrollToTarget(target: string) {
     this.scroller.scrollToAnchor(target);
