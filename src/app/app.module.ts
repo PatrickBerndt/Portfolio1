@@ -11,7 +11,8 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
-import { PopupMenuComponent } from './popup-menu/popup-menu.component'
+import { PopupMenuComponent } from './popup-menu/popup-menu.component';
+import { IsOpen } from './services/isOpen.service';
 
 
 @NgModule({
@@ -32,7 +33,7 @@ import { PopupMenuComponent } from './popup-menu/popup-menu.component'
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [IsOpen],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
