@@ -30,8 +30,14 @@
     font-size: 20px;
     font-weight: 500;
     cursor: pointer;
+    transition: all 125ms ease-out;
+    transform: scale(1);
     &:hover{
-        background-color: rgb(97, 132, 247);
+        transition: all 125ms ease-out;
+        transform: scale(1.1);
+        background: -webkit-linear-gradient(0deg, #184aff 0%, rgba(66, 139, 255, 0.84) 100%);
+        background: linear-gradient(-50deg, #184aff 0%, rgba(66, 139, 255, 0.84) 100%); 
+        border: #184aff;
         color: white;
     }
 }

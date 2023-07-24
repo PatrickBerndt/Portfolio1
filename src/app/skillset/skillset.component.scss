@@ -24,7 +24,14 @@
             justify-content: center;
             align-items: center;
             padding: 40px;
+            transition: all 125ms ease-out;
+            transform: scale(1);
+            &:hover{
+                transition: all 125ms ease-out;
+                transform: scale(1.2);
         }
+        }
+        
     }
 }
 @media(max-width: 900px){

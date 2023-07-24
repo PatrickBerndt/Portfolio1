@@ -40,14 +40,17 @@
     display: flex;
     justify-content: flex-end;
     padding-top: 20px;
-    gap: 20px;
+    gap: 5px;
     font-size: 20px;
     a{
+       width: 120px;
         cursor: pointer;
+        display: flex;
+        justify-content: center;
         text-decoration: none;
         color: black;
         &:hover{
-            font-weight: bold;
+            font-weight: 700;
         }
     }
     
