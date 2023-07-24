@@ -12,7 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { PopupMenuComponent } from './popup-menu/popup-menu.component';
-import { IsOpen } from './services/isOpen.service';
+
 
 
 @NgModule({
@@ -33,7 +33,7 @@ import { IsOpen } from './services/isOpen.service';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [IsOpen],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

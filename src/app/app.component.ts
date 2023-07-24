@@ -1,6 +1,5 @@
 import { Component, OnInit} from '@angular/core';
-import { IsOpen } from './services/isOpen.service';
-import { Subscription } from 'rxjs';
+import { IsOpenService } from './is-open.service';
 
 
 @Component({
@@ -8,22 +7,13 @@ import { Subscription } from 'rxjs';
   exportAs: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  providers: [IsOpen]
+ 
 })
 
-export class AppComponent implements OnInit {
+export class AppComponent  {
 
   title = 'Portfolio';
-  private isOpenSubscription: Subscription | undefined;
-
-  constructor(public isOpenService: IsOpen) {
-    
-  }
-
-  ngOnInit(){
-    this.isOpenSubscription = this.isOpenService.isOpen$.subscribe((isOpen: boolean) => {
-      console.log('isOpen:', isOpen);})
-  }
- 
+  
+  constructor(public isOpenService: IsOpenService){}
 
 }
