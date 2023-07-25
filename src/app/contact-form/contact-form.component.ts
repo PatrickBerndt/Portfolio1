@@ -1,4 +1,5 @@
 import { Component  } from '@angular/core';
+import { timeout } from 'rxjs';
 
 @Component({
   selector: 'app-contact-form',
@@ -11,6 +12,7 @@ export class ContactFormComponent {
   email: any;
   message: any;
   isSending: any;
+  sendingOk: any;
 
  
   
@@ -22,13 +24,20 @@ export class ContactFormComponent {
       data.append('email', this.email);
       data.append('message', this.message);
       await fetch('https://www.patrickberndt.de/sendmail/send_mail.php', {
-          method: 'POST',
+      method: 'POST',
            body: data
        })
       this.cleanInputs()
       setTimeout(() => {
         this.isSending = false;
+        this.finishSending()
       }, 2000);
+    }
+    finishSending(){
+      this.sendingOk = true;
+      setTimeout(() => {
+        this.sendingOk = false;
+      }, 3000);
     }
 
     cleanInputs(){

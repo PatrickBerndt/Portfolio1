@@ -1,11 +1,11 @@
 <img class="menuIcon" src="assets/SimpleLineIconsMenu.svg" (click)="toggleMenu()">
 <div class="popupMenu" [ngClass]="{'showMenu':this.isOpenService.isOpen}">
 
-    <a (click)="scrollToTarget('about')">About me</a>
-    <a (click)="scrollToTarget('skill')">Skill set</a>
-    <a (click)="scrollToTarget('work')">My work</a>
-    <img class="icons" (click)="link('https://www.github.com/PatrickBerndt/')" src="assets/Github button s2.png">
-    <img class="icons" (click)="scrollToTarget('contact')" src="assets/Email button s2.png">
-    <img class="icons" (click)="link('https://www.linkedin.com/in/patrick-berndt-924975281/')" src="assets/Linkedin button s2.png">
+    <a (click)="scrollToTarget('about'); toggleMenu()">About me</a>
+    <a (click)="scrollToTarget('skill'); toggleMenu()">Skill set</a>
+    <a (click)="scrollToTarget('work'); toggleMenu()">My work</a>
+    <img class="icons" (click)="link('https://www.github.com/PatrickBerndt/'); toggleMenu()" src="assets/Github button s2.png">
+    <img class="icons" (click)="scrollToTarget('contact');toggleMenu()" src="assets/Email button s2.png">
+    <img class="icons" (click)="link('https://www.linkedin.com/in/patrick-berndt-924975281/');toggleMenu()" src="assets/Linkedin button s2.png">
 
 </div>
