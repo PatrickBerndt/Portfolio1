@@ -1,13 +1,37 @@
 .popupMenu{
     display: none;
     position: fixed;
+    width: 0;
     z-index: 10;
     top: 0;
     bottom: 0;
     right: 0;
+    transition: all 250ms ease-in-out;
+}
+.menuWidth{
+    width: 100% !important;
+}
+.impressum{
+    position:fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+   
+    height: 600px;
+    width: 400px;
+    
+    z-index: 100;
+    
 }
 @media(max-width: 1000px){
     .popupMenu{
        display: block;
+    }
+}
+@media(max-width: 440px){
+    .impressum{
+        
+        width: 90%;
+        
     }
 }

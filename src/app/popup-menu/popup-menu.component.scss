@@ -19,6 +19,8 @@
     top: 0;
     right: 0;
     bottom: 0;
+    transition: all 125ms ease-in-out;
+    opacity: 0;
     a{
         cursor: pointer;
         font-weight: 600;
@@ -28,4 +30,9 @@
         cursor: pointer;
         height: 50px;
     }
+}
+.showMenu{
+
+    
+    opacity: 1 !important;
 }

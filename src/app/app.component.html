@@ -1,4 +1,5 @@
-<app-popup-menu class="popupMenu" [ngStyle]="{'width': this.isOpenService.isOpen ? '100%' : 'unset'}"></app-popup-menu>
+<app-impressum *ngIf="this.isOpenService.impressumIsOpen" class="impressum"></app-impressum>
+<app-popup-menu class="popupMenu" [ngClass]="{'menuWidth': this.isOpenService.isOpen}"></app-popup-menu>
 <app-head-section></app-head-section>
 <app-about-me id="about"></app-about-me>
 <app-skillset id="skill"></app-skillset>
