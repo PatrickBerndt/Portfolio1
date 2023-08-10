@@ -2,7 +2,7 @@ export class Projects{
     public static projects  = [
         {
             name: 'Join',
-            tec: 'Angular | TypeScript | HTML | CSS | Firebase',
+            tec: 'JavaScript | HTML | CSS | Firebase',
             description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
             image: 'assets/Join.png',
             gitLink: 'https://github.com/PatrickBerndt/Join',
@@ -15,6 +15,14 @@ export class Projects{
             image: 'assets/ElGato.png',
             gitLink: 'https://github.com/PatrickBerndt/El-Gato',
             liveLink: 'https://elgato.patrickberndt.de'
+        },
+        {
+            name: 'MovieDb',
+            tec: 'Angular |TypeScript | API | HTML | CSS ',
+            description: 'Movie Database inspired by The Movie Db . Here you get some Movie and Show suggestions and search for your favorit movie description. ',
+            image: 'assets/MovieDb.png',
+            gitLink: 'https://github.com/PatrickBerndt/OMDb-Fun',
+            liveLink: 'https://moviedb.patrickberndt.de'
         },
       ];
 }
